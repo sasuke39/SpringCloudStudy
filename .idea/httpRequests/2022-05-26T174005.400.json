@@ -1,0 +1,7 @@
+{
+  "timestamp": "2022-05-26T09:40:05.842+00:00",
+  "status": 400,
+  "error": "Bad Request",
+  "message": "Required request body is missing: public com.geekbang.coupon.customer.dao.entity.Coupon com.geekbang.coupon.customer.controller.CouponCustomerController.requestCoupon(com.geekbang.coupon.customer.api.beans.RequestCoupon)",
+  "path": "/coupon-customer/requestCoupon"
+}

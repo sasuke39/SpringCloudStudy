@@ -10,14 +10,26 @@ import org.springframework.core.env.Environment;
 // 注意这里不要写上@Configuration注解
 public class CanaryRuleConfiguration {
 
+//    @Bean
+//    public ReactorLoadBalancer<ServiceInstance> reactorServiceInstanceLoadBalancer(
+//            Environment environment,
+//            LoadBalancerClientFactory loadBalancerClientFactory) {
+//        String name = environment.getProperty(LoadBalancerClientFactory.PROPERTY_NAME);
+//        return new CanaryRule(loadBalancerClientFactory.getLazyProvider(name,
+//                ServiceInstanceListSupplier.class), name);
+//    }
+
+
+
     @Bean
-    public ReactorLoadBalancer<ServiceInstance> reactorServiceInstanceLoadBalancer(
+    public ReactorLoadBalancer<ServiceInstance> clusterFirstLoadBalancer(
             Environment environment,
             LoadBalancerClientFactory loadBalancerClientFactory) {
         String name = environment.getProperty(LoadBalancerClientFactory.PROPERTY_NAME);
-        return new CanaryRule(loadBalancerClientFactory.getLazyProvider(name,
-                ServiceInstanceListSupplier.class), name);
+        return new ClusterFirstRule(loadBalancerClientFactory.getLazyProvider(name,
+                ServiceInstanceListSupplier.class), name,environment);
     }
+
 
 //    @Bean
 //    public ReactorLoadBalancer<ServiceInstance> randomLoadBalancer(Environment environment,

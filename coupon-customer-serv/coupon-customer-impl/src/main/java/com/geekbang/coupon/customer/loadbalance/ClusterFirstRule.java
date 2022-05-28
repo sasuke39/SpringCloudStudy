@@ -8,6 +8,7 @@ import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.*;
 import org.springframework.cloud.loadbalancer.core.*;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpHeaders;
 import reactor.core.publisher.Mono;
 
@@ -21,19 +22,21 @@ import static com.geekbang.coupon.customer.constant.Constant.TRAFFIC_VERSION;
 
 // 可以将这个负载均衡策略单独拎出来，作为一个公共组件提供服务
 @Slf4j
-public class CanaryRule implements ReactorServiceInstanceLoadBalancer {
+public class ClusterFirstRule implements ReactorServiceInstanceLoadBalancer {
 
     private ObjectProvider<ServiceInstanceListSupplier> serviceInstanceListSupplierProvider;
     private String serviceId;
+    private Environment environment;
 
     // 定义一个轮询策略的种子
     final AtomicInteger position;
 
-    public CanaryRule(ObjectProvider<ServiceInstanceListSupplier> serviceInstanceListSupplierProvider,
-                      String serviceId) {
+    public ClusterFirstRule(ObjectProvider<ServiceInstanceListSupplier> serviceInstanceListSupplierProvider,
+                      String serviceId,Environment environment) {
         this.serviceId = serviceId;
         this.serviceInstanceListSupplierProvider = serviceInstanceListSupplierProvider;
         position = new AtomicInteger(new Random().nextInt(1000));
+        this.environment= environment;
     }
 
     @Override
@@ -62,33 +65,22 @@ public class CanaryRule implements ReactorServiceInstanceLoadBalancer {
             log.warn("No instance available {}", serviceId);
             return new EmptyResponse();
         }
+        return getSameClusterService(request, instances);
+    }
 
-        // 从请求Header中获取特定的流量打标值
-        // 注意：以下代码仅适用于WebClient调用，如果使用RestTemplate或者Feign则需要额外适配
-        DefaultRequestContext context = (DefaultRequestContext) request.getContext();
-        RequestData requestData = (RequestData) context.getClientRequest();
-        HttpHeaders headers = requestData.getHeaders();
-
-        String trafficVersion = headers.getFirst(TRAFFIC_VERSION);
-
-        // 如果没有找到打标标记，或者标记为空，则使用RoundRobin规则进行轮训
-        if (StringUtils.isBlank(trafficVersion)) {
-            // 过滤掉所有金丝雀测试的节点（Metadaba有值的节点）
-            List<ServiceInstance> noneCanaryInstances = instances.stream()
-                    .filter(e -> {
-                        return !e.getMetadata().containsKey(TRAFFIC_VERSION);
-                    })
-                    .collect(Collectors.toList());
-            return getRoundRobinInstance(noneCanaryInstances);
-        }
-
-        // 找出所有金丝雀服务器，用RoundRobin算法挑出一台
-        List<ServiceInstance> canaryInstances = instances.stream().filter(e -> {
-            String trafficVersionInMetadata = e.getMetadata().get(TRAFFIC_VERSION);
-            return StringUtils.equalsIgnoreCase(trafficVersionInMetadata, trafficVersion);
+    private Response<ServiceInstance> getSameClusterService(Request request, List<ServiceInstance> instances) {
+        String clusterName = environment.resolvePlaceholders("${spring.cloud.nacos.discovery.cluster-name:}");
+        List<ServiceInstance> instanceList = instances.stream().filter(v -> {
+            Map<String, String> metadata = v.getMetadata();
+            String serviceClusterName = metadata.get("nacos.cluster");
+            return clusterName.equals(serviceClusterName);
         }).collect(Collectors.toList());
-
-        return getRoundRobinInstance(canaryInstances);
+        //有同集群下服务 RoundRobin算法挑选
+        if (CollectionUtils.isNotEmpty(instanceList)){
+            return getRoundRobinInstance(instanceList);
+        }else {
+            return getRoundRobinInstance(instances);
+        }
     }
 
     // 使用轮训机制获取节点

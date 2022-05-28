@@ -50,6 +50,8 @@ spring:
         # 元数据部分 - 可以自己随便定制
         metadata:
           mydata: abc
+          nacos:
+            cluster: Cluster-A
         # 客户端在启动时是否读取本地配置项(一个文件)来获取服务列表
         # 注：推荐该值为false，若改成true。则客户端会在本地的一个文件中保存服务信息，当下次宕机启动时，会优先读取本地的配置对外提供服务。
         naming-load-cache-at-start: false

@@ -1,0 +1,36 @@
+POST http://127.0.0.1:20002/coupon-customer/requestCoupon
+
+<> 2022-05-26T174401.400.json
+
+###
+
+DELETE http://127.0.0.1:20002/coupon-customer/deleteCoupon?userId=1&couponId=1
+
+<> 2022-05-26T174228.500.json
+
+###
+
+DELETE http://127.0.0.1:20002/coupon-customer/deleteCoupon
+
+<> 2022-05-26T174141.400.json
+
+###
+
+POST http://127.0.0.1:20002/coupon-customer/simulateOrder
+
+<> 2022-05-26T174124.400.json
+
+###
+
+POST http://127.0.0.1:20002/coupon-customer/requestCoupon
+
+<> 2022-05-26T174005.400.json
+
+###
+
+DELETE http://127.0.0.1:20002/coupon-customer/deleteCoupon
+
+<> 2022-05-26T173952.400.json
+
+###
+

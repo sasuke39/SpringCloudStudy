@@ -4,11 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="932f754b-0a41-46c7-83d0-f830fbae2712" name="Changes" comment="" />
+    <list default="true" id="932f754b-0a41-46c7-83d0-f830fbae2712" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/loadbalance/ClusterFirstRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/loadbalance/CanaryRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/loadbalance/CanaryRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/loadbalance/CanaryRuleConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/loadbalance/CanaryRuleConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/com/geekbang/coupon/customer/loadbalance/CanaryRule.class" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/com/geekbang/coupon/customer/loadbalance/CanaryRule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/com/geekbang/coupon/customer/loadbalance/CanaryRuleConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/com/geekbang/coupon/customer/loadbalance/CanaryRuleConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/target/classes/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,6 +71,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -64,7 +93,22 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
     <property name="show.run.dashboard.notification" value="false" />
   </component>
-  <component name="RunManager" selected="Spring Boot.CouponTempApplication">
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.CouponCusApplication">
+    <configuration name="CouponCusApplication | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/CouponCusApplication.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="CouponCusApplication | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/CouponCusApplication.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="CouponCusApplication | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/CouponCusApplication.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="CouponCusApplication | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/CouponCusApplication.http" index="4" requestIdentifier="#4" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="CouponCalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="coupon-calculation-impl" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.geekbang.coupon.calculation.CouponCalApplication" />
@@ -93,7 +137,19 @@
       <item itemvalue="Spring Boot.CouponCalApplication" />
       <item itemvalue="Spring Boot.CouponCusApplication" />
       <item itemvalue="Spring Boot.CouponTempApplication" />
+      <item itemvalue="HTTP Request.CouponCusApplication | #1" />
+      <item itemvalue="HTTP Request.CouponCusApplication | #2" />
+      <item itemvalue="HTTP Request.CouponCusApplication | #4" />
+      <item itemvalue="HTTP Request.CouponCusApplication | #3" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.CouponCusApplication | #3" />
+        <item itemvalue="HTTP Request.CouponCusApplication | #2" />
+        <item itemvalue="HTTP Request.CouponCusApplication | #4" />
+        <item itemvalue="HTTP Request.CouponCusApplication | #1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -107,7 +163,8 @@
       <workItem from="1653386877578" duration="1581000" />
       <workItem from="1653467281589" duration="7248000" />
       <workItem from="1653552828961" duration="573000" />
-      <workItem from="1653553599179" duration="504000" />
+      <workItem from="1653553599179" duration="893000" />
+      <workItem from="1653554900021" duration="24666000" />
     </task>
     <servers />
   </component>

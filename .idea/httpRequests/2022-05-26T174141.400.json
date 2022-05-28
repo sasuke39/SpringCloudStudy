@@ -1,0 +1,7 @@
+{
+  "timestamp": "2022-05-26T09:41:41.150+00:00",
+  "status": 400,
+  "error": "Bad Request",
+  "message": "Required Long parameter 'userId' is not present",
+  "path": "/coupon-customer/deleteCoupon"
+}
