@@ -5,15 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="932f754b-0a41-46c7-83d0-f830fbae2712" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/feign/CalculationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/feign/TemplateService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-api/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/CouponCusApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/CouponCusApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/feign/CalculationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-api/src/main/java/com/geekbang/coupon/calculation/api/CalculationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/feign/TemplateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-api/src/main/java/com/geekbang/coupon/template/api/TemplateService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/service/CouponCustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/service/CouponCustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/com/geekbang/coupon/customer/CouponCusApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/com/geekbang/coupon/customer/CouponCusApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/com/geekbang/coupon/customer/service/CouponCustomerServiceImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/com/geekbang/coupon/customer/feign/CalculationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/com/geekbang/coupon/customer/feign/TemplateService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/com/geekbang/coupon/customer/service/CouponCustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/com/geekbang/coupon/customer/service/CouponCustomerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +90,13 @@
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.geekbang.coupon.template.api" />
+      <recent name="com.geekbang.coupon.calculation.api" />
+      <recent name="com.geekbang.coupon.calculation.api.beans.api" />
+    </key>
+  </component>
   <component name="RunManager" selected="Spring Boot.CouponCusApplication">
     <configuration name="CouponCusApplication | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/CouponCusApplication.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
@@ -124,13 +135,13 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.CouponCalApplication" />
-      <item itemvalue="Spring Boot.CouponCusApplication" />
-      <item itemvalue="Spring Boot.CouponTempApplication" />
       <item itemvalue="HTTP Request.CouponCusApplication | #1" />
       <item itemvalue="HTTP Request.CouponCusApplication | #2" />
       <item itemvalue="HTTP Request.CouponCusApplication | #4" />
       <item itemvalue="HTTP Request.CouponCusApplication | #3" />
+      <item itemvalue="Spring Boot.CouponCalApplication" />
+      <item itemvalue="Spring Boot.CouponCusApplication" />
+      <item itemvalue="Spring Boot.CouponTempApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -155,6 +166,8 @@
       <workItem from="1653552828961" duration="573000" />
       <workItem from="1653553599179" duration="893000" />
       <workItem from="1653554900021" duration="29019000" />
+      <workItem from="1653763119316" duration="1244000" />
+      <workItem from="1653899658549" duration="3625000" />
     </task>
     <servers />
   </component>
@@ -201,5 +214,21 @@
         <entry key="504dabeb-4fa6-4443-ae21-6a6935df352f" value="TOOL_WINDOW" />
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/src/main/java/com/geekbang/coupon/calculation/controller/service/CouponCalculationServiceImpl.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/src/main/java/com/geekbang/coupon/calculation/controller/service/CouponCalculationServiceImpl.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,4 +1,4 @@
-package com.geekbang.coupon.customer.feign;
+package com.geekbang.coupon.template.api;
 
 import com.geekbang.coupon.template.api.beans.CouponTemplateInfo;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -13,7 +13,7 @@ import java.util.Map;
  * @date 2022/5/28
  */
 
-@FeignClient(value = "coupon-template-serv", path = "/template")
+@FeignClient(value = "coupon-template-serv", path = "/template",fallback = TemplateServiceFallback.class)
 public interface TemplateService {
     // 读取优惠券
     @GetMapping("/getTemplate")

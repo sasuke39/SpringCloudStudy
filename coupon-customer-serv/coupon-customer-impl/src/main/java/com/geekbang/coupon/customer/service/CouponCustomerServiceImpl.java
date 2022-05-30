@@ -1,5 +1,6 @@
 package com.geekbang.coupon.customer.service;
 
+import com.geekbang.coupon.calculation.api.CalculationService;
 import com.geekbang.coupon.calculation.api.beans.ShoppingCart;
 import com.geekbang.coupon.calculation.api.beans.SimulationOrder;
 import com.geekbang.coupon.calculation.api.beans.SimulationResponse;
@@ -8,9 +9,8 @@ import com.geekbang.coupon.customer.api.beans.SearchCoupon;
 import com.geekbang.coupon.customer.api.enums.CouponStatus;
 import com.geekbang.coupon.customer.dao.CouponDao;
 import com.geekbang.coupon.customer.dao.entity.Coupon;
-import com.geekbang.coupon.customer.feign.CalculationService;
-import com.geekbang.coupon.customer.feign.TemplateService;
 import com.geekbang.coupon.customer.service.intf.CouponCustomerService;
+import com.geekbang.coupon.template.api.TemplateService;
 import com.geekbang.coupon.template.api.beans.CouponInfo;
 import com.geekbang.coupon.template.api.beans.CouponTemplateInfo;
 import com.google.common.collect.Lists;

@@ -1,8 +1,9 @@
-package com.geekbang.coupon.customer.feign;
+package com.geekbang.coupon.calculation.api;
 
 import com.geekbang.coupon.calculation.api.beans.ShoppingCart;
 import com.geekbang.coupon.calculation.api.beans.SimulationOrder;
 import com.geekbang.coupon.calculation.api.beans.SimulationResponse;
+import com.geekbang.coupon.template.api.TemplateServiceFallback;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 
