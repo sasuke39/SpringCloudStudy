@@ -6,18 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="932f754b-0a41-46c7-83d0-f830fbae2712" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/feign/CalculationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-api/src/main/java/com/geekbang/coupon/calculation/api/CalculationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/feign/TemplateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-api/src/main/java/com/geekbang/coupon/template/api/TemplateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/service/CouponCustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/service/CouponCustomerServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/com/geekbang/coupon/customer/feign/CalculationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/com/geekbang/coupon/customer/feign/TemplateService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/com/geekbang/coupon/customer/service/CouponCustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/com/geekbang/coupon/customer/service/CouponCustomerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/com/geekbang/coupon/customer/Configuration.class" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/com/geekbang/coupon/customer/Configuration.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-api/src/main/java/com/geekbang/coupon/template/api/TemplateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-api/src/main/java/com/geekbang/coupon/template/api/TemplateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-api/src/main/java/com/geekbang/coupon/template/api/TemplateServiceFallbackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-api/src/main/java/com/geekbang/coupon/template/api/TemplateServiceFallbackFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-api/target/classes/com/geekbang/coupon/template/api/TemplateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-api/target/classes/com/geekbang/coupon/template/api/TemplateService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/java/com/geekbang/coupon/template/service/CouponTemplateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/java/com/geekbang/coupon/template/service/CouponTemplateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/target/classes/com/geekbang/coupon/template/service/CouponTemplateServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/target/classes/com/geekbang/coupon/template/service/CouponTemplateServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -167,7 +167,7 @@
       <workItem from="1653553599179" duration="893000" />
       <workItem from="1653554900021" duration="29019000" />
       <workItem from="1653763119316" duration="1244000" />
-      <workItem from="1653899658549" duration="3625000" />
+      <workItem from="1653899658549" duration="7222000" />
     </task>
     <servers />
   </component>

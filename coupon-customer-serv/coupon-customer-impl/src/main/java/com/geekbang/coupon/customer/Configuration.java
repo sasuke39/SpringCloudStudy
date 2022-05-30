@@ -1,5 +1,7 @@
 package com.geekbang.coupon.customer;
 
+import com.geekbang.coupon.template.api.TemplateServiceFallback;
+import com.geekbang.coupon.template.api.TemplateServiceFallbackFactory;
 import feign.Logger;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
@@ -20,6 +22,16 @@ public class Configuration {
     @Bean
     Logger.Level feignLogger() {
         return Logger.Level.FULL;
+    }
+
+    @Bean
+    TemplateServiceFallback getTemcall(){
+        return new TemplateServiceFallback();
+    }
+
+    @Bean
+    TemplateServiceFallbackFactory getFallBackFac(){
+        return new TemplateServiceFallbackFactory();
     }
 
 }

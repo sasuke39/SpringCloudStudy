@@ -13,7 +13,8 @@ import java.util.Map;
  * @date 2022/5/28
  */
 
-@FeignClient(value = "coupon-template-serv", path = "/template",fallback = TemplateServiceFallback.class)
+@FeignClient(value = "coupon-template-serv", path = "/template",
+        fallbackFactory = TemplateServiceFallbackFactory.class)
 public interface TemplateService {
     // 读取优惠券
     @GetMapping("/getTemplate")

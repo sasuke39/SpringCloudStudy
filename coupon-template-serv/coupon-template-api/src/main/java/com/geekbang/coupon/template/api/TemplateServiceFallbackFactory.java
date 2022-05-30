@@ -21,6 +21,9 @@ public class TemplateServiceFallbackFactory implements FallbackFactory<TemplateS
             @Override
             public CouponTemplateInfo getTemplate(Long id) {
                 log.info("fallback factory method test");
+                if (cause!=null){
+                    log.error("error:",cause);
+                }
                 return null;
             }
 
