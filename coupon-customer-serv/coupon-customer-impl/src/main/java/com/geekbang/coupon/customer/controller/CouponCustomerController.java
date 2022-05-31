@@ -1,5 +1,6 @@
 package com.geekbang.coupon.customer.controller;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.geekbang.coupon.calculation.api.beans.ShoppingCart;
 import com.geekbang.coupon.calculation.api.beans.SimulationOrder;
 import com.geekbang.coupon.calculation.api.beans.SimulationResponse;
@@ -10,6 +11,8 @@ import com.geekbang.coupon.customer.service.intf.CouponCustomerService;
 import com.geekbang.coupon.template.api.beans.CouponInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -17,13 +20,18 @@ import java.util.List;
 
 @Slf4j
 @RestController
+@RefreshScope
 @RequestMapping("coupon-customer")
 public class CouponCustomerController {
 
     @Autowired
     private CouponCustomerService customerService;
 
+    @Value("${disableCouponRequest:false}")
+    private Boolean disableCoupon;
+
     @PostMapping("requestCoupon")
+    @SentinelResource(value = "requestCoupon")
     public Coupon requestCoupon(@Valid @RequestBody RequestCoupon request) {
         return customerService.requestCoupon(request);
     }
@@ -50,6 +58,7 @@ public class CouponCustomerController {
 
     // 实现的时候最好封装一个search object类
     @PostMapping("findCoupon")
+    @SentinelResource(value = "customer-findCoupon")
     public List<CouponInfo> findCoupon(@Valid @RequestBody SearchCoupon request) {
         return customerService.findCoupon(request);
     }

@@ -5,18 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="932f754b-0a41-46c7-83d0-f830fbae2712" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/controller/CouponCustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/controller/CouponCustomerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/com/geekbang/coupon/customer/Configuration.class" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/com/geekbang/coupon/customer/Configuration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-api/src/main/java/com/geekbang/coupon/template/api/TemplateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-api/src/main/java/com/geekbang/coupon/template/api/TemplateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-api/src/main/java/com/geekbang/coupon/template/api/TemplateServiceFallbackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-api/src/main/java/com/geekbang/coupon/template/api/TemplateServiceFallbackFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-api/target/classes/com/geekbang/coupon/template/api/TemplateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-api/target/classes/com/geekbang/coupon/template/api/TemplateService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/java/com/geekbang/coupon/template/controller/CouponTemplateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/java/com/geekbang/coupon/template/controller/CouponTemplateController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/java/com/geekbang/coupon/template/service/CouponTemplateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/java/com/geekbang/coupon/template/service/CouponTemplateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/target/classes/com/geekbang/coupon/template/service/CouponTemplateServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/target/classes/com/geekbang/coupon/template/service/CouponTemplateServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +95,7 @@
       <recent name="com.geekbang.coupon.calculation.api.beans.api" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.CouponCusApplication">
+  <component name="RunManager" selected="Spring Boot.CouponTempApplication">
     <configuration name="CouponCusApplication | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/CouponCusApplication.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -167,7 +165,8 @@
       <workItem from="1653553599179" duration="893000" />
       <workItem from="1653554900021" duration="29019000" />
       <workItem from="1653763119316" duration="1244000" />
-      <workItem from="1653899658549" duration="7222000" />
+      <workItem from="1653899658549" duration="20926000" />
+      <workItem from="1653984526013" duration="1572000" />
     </task>
     <servers />
   </component>
