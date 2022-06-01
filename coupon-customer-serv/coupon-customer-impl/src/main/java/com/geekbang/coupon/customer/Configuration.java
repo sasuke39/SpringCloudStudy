@@ -3,6 +3,8 @@ package com.geekbang.coupon.customer;
 import com.geekbang.coupon.template.api.TemplateServiceFallback;
 import com.geekbang.coupon.template.api.TemplateServiceFallbackFactory;
 import feign.Logger;
+import feign.RequestInterceptor;
+import feign.RequestTemplate;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.reactive.function.client.WebClient;

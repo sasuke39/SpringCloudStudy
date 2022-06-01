@@ -41,15 +41,34 @@ public class CouponTemplateController {
 
     // 读取优惠券
     @GetMapping("/getTemplate")
-    @SentinelResource(value = "getTemplate")
-    public CouponTemplateInfo getTemplate(@RequestParam("id") Long id){
+    @SentinelResource(value = "getTemplate",
+            blockHandler = "getTemplate_block",
+            fallback = "getTemplate_fallback")
+    public CouponTemplateInfo getTemplate(@RequestParam("id") Long id) {
         log.info("Load template, id={}", id);
         return couponTemplateService.loadTemplateInfo(id);
     }
 
+
+    public CouponTemplateInfo getTemplate_block(Long id) {
+        log.info("接口被限流");
+        return new CouponTemplateInfo();
+    }
+
+
+    public CouponTemplateInfo getTemplate_fallback(Long id) {
+        log.info("接口被限流");
+        return new CouponTemplateInfo();
+    }
+
+
+
+
     // 批量获取
     @GetMapping("/getBatch")
-    @SentinelResource(value = "getTemplateInBatch", blockHandler = "getTemplateInBatch_block")
+    @SentinelResource(value = "getTemplateInBatch",
+            blockHandler = "getTemplateInBatch_block",
+            fallback = "getTemplateInBatch_fallback")
     public Map<Long, CouponTemplateInfo> getTemplateInBatch(@RequestParam("ids") Collection<Long> ids) {
         log.info("getTemplateInBatch: {}", JSON.toJSONString(ids));
         return couponTemplateService.getTemplateInfoMap(ids);
@@ -60,6 +79,13 @@ public class CouponTemplateController {
         return Maps.newHashMap();
     }
 
+    // 接口被降级时的方法public
+    Map getTemplateInBatch_fallback(Collection ids) {
+        log.info("接口被降级");
+        return Maps.newHashMap();
+    }
+
+
     // 搜索模板
     @PostMapping("/search")
     public PagedCouponTemplateInfo search(@Valid @RequestBody TemplateSearchParams request) {
@@ -69,7 +95,7 @@ public class CouponTemplateController {
 
     // 优惠券无效化
     @DeleteMapping("/deleteTemplate")
-    public void deleteTemplate(@RequestParam("id") Long id){
+    public void deleteTemplate(@RequestParam("id") Long id) {
         log.info("Load template, id={}", id);
         couponTemplateService.deleteTemplate(id);
     }

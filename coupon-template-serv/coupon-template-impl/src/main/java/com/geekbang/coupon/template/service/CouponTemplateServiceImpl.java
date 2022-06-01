@@ -127,11 +127,6 @@ public class CouponTemplateServiceImpl implements CouponTemplateService {
     @Override
     public CouponTemplateInfo loadTemplateInfo(Long id) {
         Optional<CouponTemplate> template = templateDao.findById(id);
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         return template.map(CouponTemplateConverter::convertToTemplateInfo).orElse(null);
     }
 
