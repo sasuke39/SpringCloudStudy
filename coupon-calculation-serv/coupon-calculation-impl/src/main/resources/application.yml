@@ -5,9 +5,21 @@ server:
 #    context-path: /coupon-template
 
 spring:
+  zipkin:
+    sender:
+      type: rabbit
+    rabbitmq:
+      addresses: 127.0.0.1:5672
+      queue: zipkin
   application:
     # 定义项目名称
     name: coupon-calculation-serv
+  sleuth:
+    sampler:
+        # 采样率的概率，100%采样
+      probability: 1.0
+        # 每秒采样数字最高为1000
+      rate: 1000
   cloud:
     nacos:
       discovery:
@@ -63,6 +75,8 @@ management:
     web:
       exposure:
         include: "*"
+
+
 
 
 

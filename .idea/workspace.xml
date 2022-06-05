@@ -5,18 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="932f754b-0a41-46c7-83d0-f830fbae2712" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/OpenfeignSentinelInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/java/com/geekbang/coupon/template/SentinelOriginParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/com/geekbang/coupon/customer/Configuration.class" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/com/geekbang/coupon/customer/Configuration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/java/com/geekbang/coupon/template/controller/CouponTemplateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/java/com/geekbang/coupon/template/controller/CouponTemplateController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/java/com/geekbang/coupon/template/service/CouponTemplateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/java/com/geekbang/coupon/template/service/CouponTemplateServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/target/classes/com/geekbang/coupon/template/controller/CouponTemplateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/target/classes/com/geekbang/coupon/template/controller/CouponTemplateController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/target/classes/com/geekbang/coupon/template/service/CouponTemplateServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/target/classes/com/geekbang/coupon/template/service/CouponTemplateServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +37,18 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/coupon-template-serv/coupon-template-api/src/main/java/com/geekbang/coupon/template/api/TemplateService.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/src/main/java/com/geekbang/coupon/calculation/controller/service/CouponCalculationServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/java/com/geekbang/coupon/template/service/CouponTemplateServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/java/com/geekbang/coupon/template/SentinelOriginParser.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/coupon-template-serv/coupon-template-api/src/main/java/com/geekbang/coupon/template/api/TemplateServiceFallback.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/java/com/geekbang/coupon/template/controller/CouponTemplateController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/OpenfeignSentinelInterceptor.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/coupon-template-serv/coupon-template-api/src/main/java/com/geekbang/coupon/template/api/TemplateServiceFallbackFactory.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -168,7 +175,8 @@
       <workItem from="1653554900021" duration="29019000" />
       <workItem from="1653763119316" duration="1244000" />
       <workItem from="1653899658549" duration="20926000" />
-      <workItem from="1653984526013" duration="11343000" />
+      <workItem from="1653984526013" duration="20846000" />
+      <workItem from="1654409763313" duration="610000" />
     </task>
     <servers />
   </component>
@@ -219,15 +227,20 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/src/main/java/com/geekbang/coupon/calculation/controller/service/CouponCalculationServiceImpl.java</url>
           <line>36</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/src/main/java/com/geekbang/coupon/calculation/controller/service/CouponCalculationServiceImpl.java</url>
           <line>58</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-sleuth-instrumentation/3.0.1/spring-cloud-sleuth-instrumentation-3.0.1.jar!/org/springframework/cloud/sleuth/instrument/web/client/feign/TracingFeignClient.class</url>
+          <line>47</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

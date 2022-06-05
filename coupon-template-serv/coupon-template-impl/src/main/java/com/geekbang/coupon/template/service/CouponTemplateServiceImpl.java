@@ -145,7 +145,7 @@ public class CouponTemplateServiceImpl implements CouponTemplateService {
      */
     @Override
     public Map<Long, CouponTemplateInfo> getTemplateInfoMap(Collection<Long> ids) {
-
+        int i = 1/0;
         List<com.geekbang.coupon.template.dao.entity.CouponTemplate> templates = templateDao.findAllById(ids);
 
         return templates.stream()
