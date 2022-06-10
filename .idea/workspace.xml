@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="932f754b-0a41-46c7-83d0-f830fbae2712" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/middleware/gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/gateway/src/main/java/com/geekbang/gateway/GatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/gateway/src/main/java/com/geekbang/gateway/RedisLimitationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/gateway/src/main/java/com/geekbang/gateway/RoutesConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/gateway/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/java/com/geekbang/coupon/template/service/CouponTemplateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/java/com/geekbang/coupon/template/service/CouponTemplateServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/target/classes/com/geekbang/coupon/template/service/CouponTemplateServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/target/classes/com/geekbang/coupon/template/service/CouponTemplateServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/java/com/geekbang/coupon/template/controller/CouponTemplateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/java/com/geekbang/coupon/template/controller/CouponTemplateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/target/classes/com/geekbang/coupon/template/controller/CouponTemplateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/target/classes/com/geekbang/coupon/template/controller/CouponTemplateController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +108,7 @@
       <recent name="com.geekbang.coupon.calculation.api.beans.api" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.CouponCusApplication">
+  <component name="RunManager" selected="Spring Boot.GatewayApplication">
     <configuration name="CouponCusApplication | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/CouponCusApplication.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -141,6 +145,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.geekbang.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.geekbang.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="HTTP Request.CouponCusApplication | #1" />
       <item itemvalue="HTTP Request.CouponCusApplication | #2" />
@@ -149,9 +166,11 @@
       <item itemvalue="Spring Boot.CouponCalApplication" />
       <item itemvalue="Spring Boot.CouponCusApplication" />
       <item itemvalue="Spring Boot.CouponTempApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="HTTP Request.CouponCusApplication | #3" />
         <item itemvalue="HTTP Request.CouponCusApplication | #2" />
         <item itemvalue="HTTP Request.CouponCusApplication | #4" />
@@ -176,7 +195,8 @@
       <workItem from="1653763119316" duration="1244000" />
       <workItem from="1653899658549" duration="20926000" />
       <workItem from="1653984526013" duration="20846000" />
-      <workItem from="1654409763313" duration="610000" />
+      <workItem from="1654409763313" duration="1858000" />
+      <workItem from="1654878712152" duration="2269000" />
     </task>
     <servers />
   </component>
