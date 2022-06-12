@@ -49,7 +49,10 @@ public class RoutesConfiguration {
                         .uri("lb://coupon-template-serv")
                 ).route(route -> route
                         .path("/gateway/calculator/**")
-                        .filters(f -> f.stripPrefix(1))
+                        .filters(f -> f.stripPrefix(1)
+                                .requestRateLimiter(limiter -> {
+                                    limiter.setRateLimiter(templateRateLimiter);
+                                }))
                         .uri("lb://coupon-calculation-serv")
                 ).route(route -> route.path("/gateway/coupon-customer/**")
                         .filters(f -> f.stripPrefix(1)

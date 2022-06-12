@@ -5,18 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="932f754b-0a41-46c7-83d0-f830fbae2712" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/middleware/gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware/gateway/src/main/java/com/geekbang/gateway/GatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware/gateway/src/main/java/com/geekbang/gateway/RedisLimitationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware/gateway/src/main/java/com/geekbang/gateway/RoutesConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware/gateway/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware/gateway/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/mq/CouponConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/mq/CouponProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/mq/EventConstant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/java/com/geekbang/coupon/template/controller/CouponTemplateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/src/main/java/com/geekbang/coupon/template/controller/CouponTemplateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/target/classes/com/geekbang/coupon/template/controller/CouponTemplateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/target/classes/com/geekbang/coupon/template/controller/CouponTemplateController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/controller/CouponCustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/controller/CouponCustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/service/CouponCustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/src/main/java/com/geekbang/coupon/customer/service/CouponCustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/com/geekbang/coupon/customer/service/CouponCustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/target/classes/com/geekbang/coupon/customer/service/CouponCustomerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/gateway/src/main/java/com/geekbang/gateway/RedisLimitationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/gateway/src/main/java/com/geekbang/gateway/RedisLimitationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/gateway/target/classes/com/geekbang/gateway/RedisLimitationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/gateway/target/classes/com/geekbang/gateway/RedisLimitationConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/gateway/target/classes/com/geekbang/gateway/RoutesConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/gateway/target/classes/com/geekbang/gateway/RoutesConfiguration.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +27,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -196,7 +196,7 @@
       <workItem from="1653899658549" duration="20926000" />
       <workItem from="1653984526013" duration="20846000" />
       <workItem from="1654409763313" duration="1858000" />
-      <workItem from="1654878712152" duration="2269000" />
+      <workItem from="1654878712152" duration="9196000" />
     </task>
     <servers />
   </component>
@@ -261,6 +261,11 @@
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-sleuth-instrumentation/3.0.1/spring-cloud-sleuth-instrumentation-3.0.1.jar!/org/springframework/cloud/sleuth/instrument/web/client/feign/TracingFeignClient.class</url>
           <line>47</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-gateway-server/3.0.1/spring-cloud-gateway-server-3.0.1-sources.jar!/org/springframework/cloud/gateway/filter/factory/RequestRateLimiterGatewayFilterFactory.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

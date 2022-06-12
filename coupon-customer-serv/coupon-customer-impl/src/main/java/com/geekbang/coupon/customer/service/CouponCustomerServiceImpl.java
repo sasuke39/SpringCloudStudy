@@ -126,7 +126,8 @@ public class CouponCustomerServiceImpl implements CouponCustomerService {
         // 模板不存在则报错
         if (templateInfo == null) {
             log.error("invalid template id={}", request.getCouponTemplateId());
-            throw new IllegalArgumentException("Invalid template id");
+            return null;
+//            throw new IllegalArgumentException("Invalid template id");
         }
 
         // 模板不能过期
